@@ -32,6 +32,20 @@ int main(int argc, const char * argv[]) {
     
     // Print your name in big block letters.
     // Each letter should have a height of seven characters and a width of five characters.
+    
+    // EEEEE  RRRR   IIIII  CCCCC
+    // E      R   R    I    C
+    // E      R   R    I    C
+    // EEEEE  RRRR     I    C
+    // E      R   R    I    C
+    // E      R   R    I    C
+    // EEEEE  R   R  IIIII  CCCCC
+
+    char letterE, letterR, letterI, letterC;
+    letterE = "E";
+    letterR = "R";
+    letterI = "I";
+    letterC = "C";
 
     
     return 0;
