@@ -18,8 +18,22 @@ int main(int argc, const char * argv[]) {
     prod = float_1 * float_2;
     printf("1st Number = %.4f\n2nd Number = %.4f\n   Product = %.4f\n", float_1, float_2, prod);
     
+    // Create a file and add any 10 floating point numbers, one per line.
+    // Open the file and read in the ten numbers
+    // Divide each number by 100.
+    // Open a different file and write the divided numbers, one per line, in the reverse order.
+
     
     
+    // Write logic to calculate the area of a circle and volume of a sphere.
+    // Ask user for the radius, then calculate and output the circle area and the sphere volume.
+    // Print the area and volume with three digits after the decimal.
+
+    
+    
+    
+    // Ask user for a length of time in the format hh:mm:ss.
+    // Calculate and print out the time as a number of seconds.
     
     return 0;
 }
