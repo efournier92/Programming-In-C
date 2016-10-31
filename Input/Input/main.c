@@ -22,6 +22,21 @@ int main(int argc, const char * argv[]) {
     // Open the file and read in the ten numbers
     // Divide each number by 100.
     // Open a different file and write the divided numbers, one per line, in the reverse order.
+    FILE *inputFile;
+    FILE *outputFile;
+    float x;
+    int i;
+    
+    inputFile = fopen("inNums.txt","r");
+    outputFile = fopen("outNums.txt","w");
+    x = 3.245;
+    fprintf(outputFile, "x = %f \n", x);
+    fscanf(inputFile,"%d", &i);
+                               
+    printf("From the input file, the variable i=%d was read \n", i);
+                                      
+    fclose(outputFile);
+    fclose(inputFile);
 
     
     
