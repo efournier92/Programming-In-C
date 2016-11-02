@@ -22,15 +22,25 @@ int main(int argc, const char * argv[]) {
     // Open a different file and write the divided numbers, one per line, in the reverse order.
     FILE *inFile;
     FILE *outFile;
-    float i;
+    int i;
+    float j;
     
     inFile = fopen("inNums.txt","r");
     outFile = fopen("outNums.txt","w");
-  
-    fscanf(inFile,"%d", &i);
     
-    printf("From the input file, the variable i=%d was read \n", i);
-                                      
+    while (1) {
+        if (fgets(line,150, fp) == NULL) break;
+        i++;
+        printf("%3d: %s", i, line);
+    }
+//    printf("%d\n",i);
+//    for (i = 0; i<=10; i++)
+//        
+//        
+//    fscanf(inFile,"%f", &i);
+//    
+//    printf("From the input file, the variable i=%d was read \n", i);
+    
     fclose(outFile);
     fclose(inFile);
     
