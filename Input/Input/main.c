@@ -10,7 +10,6 @@ int main(int argc, const char * argv[]) {
     // Read in the numbers, and print them out, with their product.
     // Ask for two integer numbers and do the same.
     // Use this format: num_1 * num_2 = product
-    
     float float_1, float_2, prod;
     
     printf("Please input 2 floating point numbers:\n>> ");
@@ -18,25 +17,24 @@ int main(int argc, const char * argv[]) {
     prod = float_1 * float_2;
     printf("1st Number = %.4f\n2nd Number = %.4f\n   Product = %.4f\n", float_1, float_2, prod);
     
-    // Create a file and add any 10 floating point numbers, one per line.
-    // Open the file and read in the ten numbers
+    // Create a file and add any 10 floating point numbers, one per en the file and read in the ten numbers
     // Divide each number by 100.
     // Open a different file and write the divided numbers, one per line, in the reverse order.
-    FILE *inputFile;
-    FILE *outputFile;
-    float x;
-    int i;
+    FILE *inFile;
+    FILE *outFile;
+    float i;
     
-    inputFile = fopen("inNums.txt","r");
-    outputFile = fopen("outNums.txt","w");
-    x = 3.245;
-    fprintf(outputFile, "x = %f \n", x);
-    fscanf(inputFile,"%d", &i);
-                               
+    inFile = fopen("inNums.txt","r");
+    outFile = fopen("outNums.txt","w");
+  
+    fscanf(inFile,"%d", &i);
+    
     printf("From the input file, the variable i=%d was read \n", i);
                                       
-    fclose(outputFile);
-    fclose(inputFile);
+    fclose(outFile);
+    fclose(inFile);
+    
+    
 
     
     
