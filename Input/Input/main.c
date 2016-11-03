@@ -29,10 +29,11 @@ int main(int argc, const char * argv[]) {
     size_t len = 0;
     ssize_t read;
     float solution;
+    float i;
     
     while ((read = getline(&line, &len, inFile)) != -1) {
         solution = atof(line) / 100;
-        printf("%.4f\n", solution);
+        fprintf(outFile,"%f\n", solution);
     }
     
 //    printf("%d\n",i);
