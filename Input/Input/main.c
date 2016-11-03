@@ -46,17 +46,22 @@ int main(int argc, const char * argv[]) {
     
     printf("Please Input Radius:\n>> ");
     scanf("%f", &radius);
-    circle_area = PI * pow(radius,2);
-    sphere_volume = (4.0/3) * PI * pow(radius,3);
+    circle_area=PI * pow(radius,2);
+    sphere_volume=(4.0/3) * PI * pow(radius,3);
     printf("CIRCLE AREA:   %.2f\n", circle_area);
-    printf("SPHERE VOLUME: %.2f\n", sphere_volume);
-    
-    
-    
-    
+    printf("SPHERE VOLUME: %.2f\n\n", sphere_volume);
     
     // Ask user for a length of time in the format hh:mm:ss.
     // Calculate and print out the time as a number of seconds.
+    int hour, minute, second;
+    int total_seconds=0;
+    
+    printf("Please Input a Length of time:\nhh:mm:ss\n>> ");
+    scanf("%i:%i:%i", &hour, &minute, &second);
+    total_seconds+=second;
+    total_seconds+=minute * 60;
+    total_seconds+=hour * 360;
+    printf("TOTAL SECONDS: %i\n", total_seconds);
     
     return 0;
 }
