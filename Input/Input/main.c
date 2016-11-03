@@ -3,6 +3,7 @@
 // Programming in C
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     
@@ -22,17 +23,18 @@ int main(int argc, const char * argv[]) {
     // Open a different file and write the divided numbers, one per line, in the reverse order.
     FILE *inFile;
     FILE *outFile;
-    int i;
-    float j;
-    
     inFile = fopen("inNums.txt","r");
     outFile = fopen("outNums.txt","w");
+    char * line = NULL;
+    size_t len = 0;
+    ssize_t read;
+    float solution;
     
-    while (1) {
-        if (fgets(line,150, fp) == NULL) break;
-        i++;
-        printf("%3d: %s", i, line);
+    while ((read = getline(&line, &len, inFile)) != -1) {
+        solution = atof(line) / 100;
+        printf("%.4f\n", solution);
     }
+    
 //    printf("%d\n",i);
 //    for (i = 0; i<=10; i++)
 //        
