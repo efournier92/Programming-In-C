@@ -48,7 +48,7 @@ int main(int argc, const char * argv[]) {
     scanf("%f", &radius);
     circle_area = PI * pow(radius,2);
     sphere_volume = (4.0/3) * PI * pow(radius,3);
-    printf("  CIRCLE AREA: %.2f\n", circle_area);
+    printf("CIRCLE AREA:   %.2f\n", circle_area);
     printf("SPHERE VOLUME: %.2f\n", sphere_volume);
     
     
