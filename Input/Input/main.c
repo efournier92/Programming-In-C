@@ -21,35 +21,22 @@ int main(int argc, const char * argv[]) {
     // Create a file and add any 10 floating point numbers, one per en the file and read in the ten numbers
     // Divide each number by 100.
     // Open a different file and write the divided numbers, one per line, in the reverse order.
+    
     FILE *inFile;
     FILE *outFile;
-    inFile = fopen("inNums.txt","r");
-    outFile = fopen("outNums.txt","w");
-    char * line = NULL;
     size_t len = 0;
     ssize_t read;
+    char * line = NULL;
     float solution;
-    float i;
+    inFile = fopen("inNums.txt","r");
+    outFile = fopen("outNums.txt","w");
     
     while ((read = getline(&line, &len, inFile)) != -1) {
         solution = atof(line) / 100;
         fprintf(outFile,"%f\n", solution);
     }
-    
-//    printf("%d\n",i);
-//    for (i = 0; i<=10; i++)
-//        
-//        
-//    fscanf(inFile,"%f", &i);
-//    
-//    printf("From the input file, the variable i=%d was read \n", i);
-    
     fclose(outFile);
     fclose(inFile);
-    
-    
-
-    
     
     // Write logic to calculate the area of a circle and volume of a sphere.
     // Ask user for the radius, then calculate and output the circle area and the sphere volume.
