@@ -1,0 +1,7 @@
+digraph Question_02 {
+  "START" ->
+    "Get int num from User" ->
+    "" ->
+  "END"
+}
+
