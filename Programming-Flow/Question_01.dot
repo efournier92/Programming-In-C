@@ -1,9 +1,0 @@
-digraph Question_01 {
-  "START" ->
-    "sum = a + b + c + d" ->
-    "Print average = sum / 4" ->
-    "for a, b, c, d: check if that num is current_largest or current_smallest" ->
-    "Print current largest & current smallest" ->
-  "END"
-}
-
