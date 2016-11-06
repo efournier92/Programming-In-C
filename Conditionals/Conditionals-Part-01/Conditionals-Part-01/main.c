@@ -14,7 +14,6 @@ int main(int argc, const char * argv[]) {
     float nums[4];
     int i;
     
-    
     printf("Please input 4 floats:\n>> ");
     scanf("%f %f %f %f", &nums[0], &nums[1], &nums[2], &nums[3]);
 
