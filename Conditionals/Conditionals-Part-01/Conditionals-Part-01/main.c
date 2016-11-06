@@ -21,12 +21,18 @@ int main(int argc, const char * argv[]) {
     sum= nums[0] + nums[1] + nums[2] + nums[3];
     ave= sum / 4;
     
-    current_largest= 0;
-    current_smallest= 0;
+    current_largest= nums[0];
+    current_smallest= nums[0];
     for (i= 0; i < 4; i++) {
         if (nums[i] > current_largest)
             current_largest = nums[i];
+        if (nums[i] < current_smallest)
+            current_smallest = nums[i];
     }
+    
+    printf("AVERAGE: %.2f", ave);
+    printf("SMALLEST: %.2f", current_smallest);
+    printf("LARGEST: %.2f", current_largest);
     
     
     
