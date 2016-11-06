@@ -20,9 +20,9 @@ int main(int argc, const char * argv[]) {
 
     sum= nums[0] + nums[1] + nums[2] + nums[3];
     ave= sum / 4;
-    
     current_largest= nums[0];
     current_smallest= nums[0];
+    
     for (i= 0; i < 4; i++) {
         if (nums[i] > current_largest)
             current_largest = nums[i];
@@ -33,6 +33,7 @@ int main(int argc, const char * argv[]) {
     printf("AVERAGE: %.2f\n", ave);
     printf("SMALLEST: %.2f\n", current_smallest);
     printf("LARGEST: %.2f\n\n", current_largest);
+    
     
     
     // A teacher generates letter grades from test scores.
@@ -53,6 +54,7 @@ int main(int argc, const char * argv[]) {
     
     printf("Please input a grade\n>> ");
     scanf("%i", &grade);
+    ones_digit = grade % 10;
     
     if (grade <= 60){
         letter_grade = 'F';
@@ -65,18 +67,16 @@ int main(int argc, const char * argv[]) {
     } else {
         letter_grade = 'A';
     }
-    
-    ones_digit = grade % 10;
-    
-    if (ones_digit >= 1 && ones_digit <= 3){
-        grade_modifier = '-';
-    } else if (ones_digit >= 4 && ones_digit <= 7) {
-        grade_modifier = ' ';
-    } else if (ones_digit >= 8 || ones_digit == 0) {
-        grade_modifier = '+';
+
+    if (grade > 60) {
+        if (ones_digit >= 1 && ones_digit <= 3){
+            grade_modifier = '-';
+        } else if (ones_digit >= 4 && ones_digit <= 7) {
+            grade_modifier = ' ';
+        } else if (ones_digit >= 8 || ones_digit == 0) {
+            grade_modifier = '+';
+        }
     }
 
-    
     printf("%c%c\n", letter_grade, grade_modifier);
-
 }
