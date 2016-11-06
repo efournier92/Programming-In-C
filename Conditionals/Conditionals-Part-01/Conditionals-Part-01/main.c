@@ -30,11 +30,9 @@ int main(int argc, const char * argv[]) {
             current_smallest = nums[i];
     }
     
-    printf("AVERAGE: %.2f", ave);
-    printf("SMALLEST: %.2f", current_smallest);
-    printf("LARGEST: %.2f", current_largest);
-    
-    
+    printf("AVERAGE: %.2f\n", ave);
+    printf("SMALLEST: %.2f\n", current_smallest);
+    printf("LARGEST: %.2f\n\n", current_largest);
     
     
     // A teacher generates letter grades from test scores.
@@ -50,12 +48,35 @@ int main(int argc, const char * argv[]) {
     //    4-7: <none>
     //    8-0: +
     // Do not modify grades below 60.
+    int grade, ones_digit;
+    char letter_grade, grade_modifier;
     
+    printf("Please input a grade\n>> ");
+    scanf("%i", &grade);
     
+    if (grade <= 60){
+        letter_grade = 'F';
+    } else if (grade <= 70) {
+        letter_grade = 'D';
+    } else if (grade <= 80) {
+        letter_grade = 'C';
+    } else if (grade <= 90) {
+        letter_grade = 'B';
+    } else {
+        letter_grade = 'A';
+    }
     
+    ones_digit = grade % 10;
     
+    if (ones_digit >= 1 && ones_digit <= 3){
+        grade_modifier = '-';
+    } else if (ones_digit >= 4 && ones_digit <= 7) {
+        grade_modifier = ' ';
+    } else if (ones_digit >= 8 || ones_digit == 0) {
+        grade_modifier = '+';
+    }
+
     
-    
-    
-    
+    printf("%c%c\n", letter_grade, grade_modifier);
+
 }
