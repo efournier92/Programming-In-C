@@ -10,8 +10,23 @@ int main(int argc, const char * argv[]) {
     // Determine and print out the average value.
     // Determine and print out the maximum value.
     // Determine and print out the minimum value.
+    float sum, ave, current_largest, current_smallest;
+    float nums[4];
+    int i;
     
     
+    printf("Please input 4 floats:\n>> ");
+    scanf("%f %f %f %f", &nums[0], &nums[1], &nums[2], &nums[3]);
+
+    sum= nums[0] + nums[1] + nums[2] + nums[3];
+    ave= sum / 4;
+    
+    current_largest= 0;
+    current_smallest= 0;
+    for (i= 0; i < 4; i++) {
+        if (nums[i] > current_largest)
+            current_largest = nums[i];
+    }
     
     
     
