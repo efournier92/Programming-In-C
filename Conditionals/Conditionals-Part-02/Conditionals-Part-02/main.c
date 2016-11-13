@@ -9,7 +9,7 @@ int main(int argc, const char * argv[]) {
     int num, i, j=0;
     int demoninations[7] = {1000, 500, 100, 50, 10, 5, 1};
     char numerals[7] = {'M', 'D', 'C', 'L', 'X', 'V', 'I'};
-    char numeralString[10];
+    char numeralString[10], repeat_input;
     
     // Ask for a number as input from the user.
     printf("Please Input a Number: \n>> ");
@@ -27,16 +27,19 @@ start:
     
     // Convert any number from 1 (I) to 3999 (MMMCMXCIX)
     for (i=0; i<7; i++) {
-        while (num > demoninations[i]) {
+        while (num >= demoninations[i]) {
             numeralString[j] = numerals[i];
             num -= demoninations[i];
+            j++;
         }
     }
-    printf("%s", numeralString);
+    printf("%s\n", numeralString);
     
     // Ask if the user wants to convert another number
+    printf("Want to go again? (Y/N)\n>> ");
+    scanf("%c", &repeat_input);
     
-    
+    if (repeat_input == 'Y' || repeat_input == 'y') goto start;
     
     return 0;
 }
