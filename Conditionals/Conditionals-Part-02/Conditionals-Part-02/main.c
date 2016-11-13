@@ -8,7 +8,7 @@
 // Write a program to convert base 10 integer numbers into Roman numerals
 int main(int argc, const char * argv[]) {
 
-    int num, i, j;
+    int num, i, j=0;
     int demoninations[7] = {1000, 500, 100, 50, 10, 5, 1};
     char numerals[7] = {'M', 'D', 'C', 'L', 'X', 'V', 'I'};
     char numeralString[10], repeat_input;
@@ -20,10 +20,11 @@ start:
     
     // Test to make sure that the number given is in that range
     if (num > 4000) {
-        printf("Too Large to Convert");
+
         while (num > 4000) {
             // If it's not in range, tell the user and ask for another number
-            printf("Input a Number Between 1 & 3999");
+            printf("Too Large to Convert\nInput a Number Between 1 & 3999\n>>");
+            scanf("%i", &num);
         }
     }
     
