@@ -19,6 +19,11 @@ int main(int argc, const char * argv[]) {
         printf("Please input a positive integer year\n>>");
         scanf("%i", &year);
     }
-
+    
+    years_since = year - 1;
+    leap_years = elapsed_years/4;
+    century_years = year/100;
+    four_century_years = year/400;
+    
     return 0;
 }
