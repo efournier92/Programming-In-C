@@ -7,7 +7,12 @@
 // Write a program to calculate the day of the week of the first day of any year
 // Assume that the current calendar rules were constant since 1/1/1
 int main(int argc, const char * argv[]) {
-    int year;
+    int year, years_since, leap_years, century_years, four_century_years;
+    int total_leap_years, total_precesion, day_index;
+    char day_name;
+    const char *days[7];
+    days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
+    days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
     
     // Ask for the year (i.e. 2414)
     printf("Please input a year\n>>");
