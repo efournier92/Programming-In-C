@@ -9,7 +9,7 @@
 int main(int argc, const char * argv[]) {
     int year, years_since, leap_years, century_years, four_century_years;
     int elapsed_years, total_leap_years, total_precesion, day_index;
-    const char *days[7], *is_was[1];
+    const char *days[7], *past_future[1];
     days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
     
@@ -30,16 +30,16 @@ int main(int argc, const char * argv[]) {
     four_century_years = years_since/400;
     
     total_leap_years = leap_years - century_years + four_century_years;
-    total_precesion = year + total_leap_years;
+    total_precesion = years_since + total_leap_years;
     day_index = total_precesion % 7;
     
     if (year < 2016) {
-        is_was[0] = "Started";
+        past_future[0] = "Started";
     } else {
-        is_was[0] = "Will Start";
+        past_future[0] = "Will Start";
     }
     
-    printf("%i %s On A %s\n", year, is_was[0], days[day_index]);
+    printf("%iAD %s On A %s\n", year, past_future[0], days[day_index]);
     
     return 0;
 }
