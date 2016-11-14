@@ -8,11 +8,12 @@
 // Assume that the current calendar rules were constant since 1/1/1
 int main(int argc, const char * argv[]) {
     int year, years_since, leap_years, century_years, four_century_years;
-    int elapsed_years, total_leap_years, total_precesion, day_index;
+    int total_leap_years, total_precesion, day_index;
+    char go_again;
     const char *days[7], *past_future[1];
     days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
-    
+start:
     // Ask for the year (i.e. 2414)
     printf("Please input a year\n>> ");
     scanf("%i", &year);
@@ -40,6 +41,13 @@ int main(int argc, const char * argv[]) {
     }
     
     printf("%iAD %s On A %s\n", year, past_future[0], days[day_index]);
+
+    
+    printf("Want to go again? (Y/N)\n>> ");
+    scanf("%s", &go_again);
+    if (go_again == 'Y' || go_again == 'y' ) {
+        goto start;
+    }
     
     return 0;
 }
