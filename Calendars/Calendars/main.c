@@ -25,5 +25,12 @@ int main(int argc, const char * argv[]) {
     century_years = year/100;
     four_century_years = year/400;
     
+    total_leap_years = leap_years - century_years + four_century_years;
+    total_precesion = year + total_leap_years;
+    day_index = total_precesion % 7;
+    day_name = days[day_index];
+    
+    printf("01-01-%i is a %s", year, day_name)
+    
     return 0;
 }
