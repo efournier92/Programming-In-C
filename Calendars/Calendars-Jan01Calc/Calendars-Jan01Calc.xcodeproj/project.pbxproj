@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B873FB871DD93185004D1EE4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B873FB861DD93185004D1EE4 /* main.c */; };
+		B81C88291DDA960400112AEB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B81C88281DDA960400112AEB /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B873FB811DD93184004D1EE4 /* CopyFiles */ = {
+		B81C88231DDA960400112AEB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B873FB831DD93185004D1EE4 /* Calendars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calendars; sourceTree = BUILT_PRODUCTS_DIR; };
-		B873FB861DD93185004D1EE4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B81C88251DDA960400112AEB /* Calendars-Jan01Calc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Calendars-Jan01Calc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81C88281DDA960400112AEB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B873FB801DD93184004D1EE4 /* Frameworks */ = {
+		B81C88221DDA960400112AEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B873FB7A1DD93184004D1EE4 = {
+		B81C881C1DDA960400112AEB = {
 			isa = PBXGroup;
 			children = (
-				B873FB851DD93185004D1EE4 /* Calendars */,
-				B873FB841DD93185004D1EE4 /* Products */,
+				B81C88271DDA960400112AEB /* Calendars-Jan01Calc */,
+				B81C88261DDA960400112AEB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B873FB841DD93185004D1EE4 /* Products */ = {
+		B81C88261DDA960400112AEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B873FB831DD93185004D1EE4 /* Calendars */,
+				B81C88251DDA960400112AEB /* Calendars-Jan01Calc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B873FB851DD93185004D1EE4 /* Calendars */ = {
+		B81C88271DDA960400112AEB /* Calendars-Jan01Calc */ = {
 			isa = PBXGroup;
 			children = (
-				B873FB861DD93185004D1EE4 /* main.c */,
+				B81C88281DDA960400112AEB /* main.c */,
 			);
-			path = Calendars;
+			path = "Calendars-Jan01Calc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B873FB821DD93184004D1EE4 /* Calendars */ = {
+		B81C88241DDA960400112AEB /* Calendars-Jan01Calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B873FB8A1DD93185004D1EE4 /* Build configuration list for PBXNativeTarget "Calendars" */;
+			buildConfigurationList = B81C882C1DDA960400112AEB /* Build configuration list for PBXNativeTarget "Calendars-Jan01Calc" */;
 			buildPhases = (
-				B873FB7F1DD93184004D1EE4 /* Sources */,
-				B873FB801DD93184004D1EE4 /* Frameworks */,
-				B873FB811DD93184004D1EE4 /* CopyFiles */,
+				B81C88211DDA960400112AEB /* Sources */,
+				B81C88221DDA960400112AEB /* Frameworks */,
+				B81C88231DDA960400112AEB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Calendars;
-			productName = Calendars;
-			productReference = B873FB831DD93185004D1EE4 /* Calendars */;
+			name = "Calendars-Jan01Calc";
+			productName = "Calendars-Jan01Calc";
+			productReference = B81C88251DDA960400112AEB /* Calendars-Jan01Calc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B873FB7B1DD93184004D1EE4 /* Project object */ = {
+		B81C881D1DDA960400112AEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = efournier;
 				TargetAttributes = {
-					B873FB821DD93184004D1EE4 = {
+					B81C88241DDA960400112AEB = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = B873FB7E1DD93184004D1EE4 /* Build configuration list for PBXProject "Calendars" */;
+			buildConfigurationList = B81C88201DDA960400112AEB /* Build configuration list for PBXProject "Calendars-Jan01Calc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B873FB7A1DD93184004D1EE4;
-			productRefGroup = B873FB841DD93185004D1EE4 /* Products */;
+			mainGroup = B81C881C1DDA960400112AEB;
+			productRefGroup = B81C88261DDA960400112AEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B873FB821DD93184004D1EE4 /* Calendars */,
+				B81C88241DDA960400112AEB /* Calendars-Jan01Calc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B873FB7F1DD93184004D1EE4 /* Sources */ = {
+		B81C88211DDA960400112AEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B873FB871DD93185004D1EE4 /* main.c in Sources */,
+				B81C88291DDA960400112AEB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B873FB881DD93185004D1EE4 /* Debug */ = {
+		B81C882A1DDA960400112AEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -173,7 +173,7 @@
 			};
 			name = Debug;
 		};
-		B873FB891DD93185004D1EE4 /* Release */ = {
+		B81C882B1DDA960400112AEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,14 +213,14 @@
 			};
 			name = Release;
 		};
-		B873FB8B1DD93185004D1EE4 /* Debug */ = {
+		B81C882D1DDA960400112AEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		B873FB8C1DD93185004D1EE4 /* Release */ = {
+		B81C882E1DDA960400112AEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -230,24 +230,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B873FB7E1DD93184004D1EE4 /* Build configuration list for PBXProject "Calendars" */ = {
+		B81C88201DDA960400112AEB /* Build configuration list for PBXProject "Calendars-Jan01Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B873FB881DD93185004D1EE4 /* Debug */,
-				B873FB891DD93185004D1EE4 /* Release */,
+				B81C882A1DDA960400112AEB /* Debug */,
+				B81C882B1DDA960400112AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B873FB8A1DD93185004D1EE4 /* Build configuration list for PBXNativeTarget "Calendars" */ = {
+		B81C882C1DDA960400112AEB /* Build configuration list for PBXNativeTarget "Calendars-Jan01Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B873FB8B1DD93185004D1EE4 /* Debug */,
-				B873FB8C1DD93185004D1EE4 /* Release */,
+				B81C882D1DDA960400112AEB /* Debug */,
+				B81C882E1DDA960400112AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B873FB7B1DD93184004D1EE4 /* Project object */;
+	rootObject = B81C881D1DDA960400112AEB /* Project object */;
 }

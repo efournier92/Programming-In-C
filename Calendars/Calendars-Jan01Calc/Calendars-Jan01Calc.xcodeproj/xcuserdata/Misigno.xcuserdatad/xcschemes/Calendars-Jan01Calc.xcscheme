@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B873FB821DD93184004D1EE4"
-               BuildableName = "Calendars"
-               BlueprintName = "Calendars"
-               ReferencedContainer = "container:Calendars.xcodeproj">
+               BlueprintIdentifier = "B81C88241DDA960400112AEB"
+               BuildableName = "Calendars-Jan01Calc"
+               BlueprintName = "Calendars-Jan01Calc"
+               ReferencedContainer = "container:Calendars-Jan01Calc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B873FB821DD93184004D1EE4"
-            BuildableName = "Calendars"
-            BlueprintName = "Calendars"
-            ReferencedContainer = "container:Calendars.xcodeproj">
+            BlueprintIdentifier = "B81C88241DDA960400112AEB"
+            BuildableName = "Calendars-Jan01Calc"
+            BlueprintName = "Calendars-Jan01Calc"
+            ReferencedContainer = "container:Calendars-Jan01Calc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B873FB821DD93184004D1EE4"
-            BuildableName = "Calendars"
-            BlueprintName = "Calendars"
-            ReferencedContainer = "container:Calendars.xcodeproj">
+            BlueprintIdentifier = "B81C88241DDA960400112AEB"
+            BuildableName = "Calendars-Jan01Calc"
+            BlueprintName = "Calendars-Jan01Calc"
+            ReferencedContainer = "container:Calendars-Jan01Calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B873FB821DD93184004D1EE4"
-            BuildableName = "Calendars"
-            BlueprintName = "Calendars"
-            ReferencedContainer = "container:Calendars.xcodeproj">
+            BlueprintIdentifier = "B81C88241DDA960400112AEB"
+            BuildableName = "Calendars-Jan01Calc"
+            BlueprintName = "Calendars-Jan01Calc"
+            ReferencedContainer = "container:Calendars-Jan01Calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

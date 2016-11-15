@@ -41,7 +41,7 @@ start:
     }
     
     printf("%iAD %s On A %s\n", year, past_future[0], days[day_index]);
-
+    
     
     printf("Want to go again? (Y/N)\n>> ");
     scanf("%s", &go_again);
