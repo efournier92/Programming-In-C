@@ -65,7 +65,7 @@ start:
         scanf("%i", &day);
     }
     
-    // Count number of days into the year
+    // Count how many days into the year input date is
     i = 0;
     precession_this_year = 0;
     while (i < month) {
