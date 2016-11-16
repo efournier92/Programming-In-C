@@ -75,9 +75,6 @@ start:
     
     precession_this_year += day;
     
-    // Count the length of the months before the input month and the number of days into the input month
-
-    
     printf("Want to go again? (Y/N)\n>> ");
     scanf("%s", &go_again);
     if (go_again == 'Y' || go_again == 'y' ) {
