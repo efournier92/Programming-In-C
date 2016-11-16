@@ -6,30 +6,16 @@
 // Write a program to calculate the day of the week of any date.
 // Assume that the current calendar rules were constant since 1/1/1.
 #include <stdio.h>
-
-
-// Remember leap years when you check February
-
-// Calculate precession to January 1 of the input year
-
-// Count number of days into the year
-
-// Count the length of the months before the input month and the number of days into the input month
-
-// January only 30 days because of reference date (01-01-0001)
-
-
-// Write a program to calculate the day of the week of the first day of any year
-
 int main(int argc, const char * argv[]) {
     int month, day, year, years_since, leap_years;
     int century_years, four_century_years;
     int total_leap_years, total_precesion, day_index;
     char go_again;
-    const char *days[7], *past_future[1];
+    const char *days[7];
     days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
-    int days_in_month[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    // January only 30 days because of reference date (01-01-0001)
+    int days_in_month[12] = {30,28,31,30,31,30,31,31,30,31,30,31};
     
 start:
     // Ask for a date (i.e. 07/04/2414)
@@ -57,19 +43,19 @@ start:
         scanf("%i", &day);
     }
     
-    // Check if it's a leap year
+    // Calculate precession to January 1st of input year
     years_since = year - 1;
-    if (years_since % 4 == 0 && (years_since % 100 != 0 || years_since % 400 == 0)) {
-        days_in_month[1] = 29;
-    }
-    
     leap_years = years_since/4;
     century_years = years_since/100;
     four_century_years = years_since/400;
-    
     total_leap_years = leap_years - century_years + four_century_years;
     total_precesion = years_since + total_leap_years;
     day_index = total_precesion % 7;
+    
+    // Check if this year's a leap year
+    if (years_since % 4 == 0 && (years_since % 100 != 0 || years_since % 400 == 0)) {
+        days_in_month[1] = 29;
+    }
     
     // Check that the day is valid according the number of days in the month
     while (day < 1 || day > days_in_month[month]) {
@@ -78,14 +64,10 @@ start:
         scanf("%i", &day);
     }
     
-    if (year < 2016) {
-        past_future[0] = "Started";
-    } else {
-        past_future[0] = "Will Start";
-    }
+    // Count number of days into the year
     
-    printf("%iAD %s On A %s\n", year, past_future[0], days[day_index]);
-    
+    // Count the length of the months before the input month and the number of days into the input month
+
     
     printf("Want to go again? (Y/N)\n>> ");
     scanf("%s", &go_again);
