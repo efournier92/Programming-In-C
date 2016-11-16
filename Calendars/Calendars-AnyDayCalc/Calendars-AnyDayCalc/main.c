@@ -37,13 +37,6 @@ start:
         scanf("%i", &month);
     }
     
-    // Check that the day is positive
-    while (day < 1 || day > 12) {
-        // If the year is not valid, tell user and ask for the year again
-        printf("Please input a valid day\n>> ");
-        scanf("%i", &day);
-    }
-    
     // Calculate precession to January 1st of input year
     years_since = year - 1;
     leap_years = years_since/4;
@@ -51,7 +44,6 @@ start:
     four_century_years = years_since/400;
     total_leap_years = leap_years - century_years + four_century_years;
     total_precesion = years_since + total_leap_years;
-    day_index = total_precesion % 7;
     
     // Check if this year's a leap year
     if (years_since % 4 == 0 && (years_since % 100 != 0 || years_since % 400 == 0)) {
@@ -74,6 +66,10 @@ start:
     }
     
     precession_this_year += day;
+    total_precesion += precession_this_year;
+    day_index = total_precesion % 7;
+    
+    printf("%i/%i/%i Was A %s", month, day, year, days[day_index]);
     
     printf("Want to go again? (Y/N)\n>> ");
     scanf("%s", &go_again);
