@@ -8,9 +8,6 @@
 #include <stdio.h>
 
 
-
-
-
 // Remember leap years when you check February
 
 // Calculate precession to January 1 of the input year
@@ -32,6 +29,8 @@ int main(int argc, const char * argv[]) {
     const char *days[7], *past_future[1];
     days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
+    int days_in_month[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    
 start:
     // Ask for a date (i.e. 07/04/2414)
     printf("Please input a data (mm/dd/yyyy)\n>> ");
@@ -50,6 +49,7 @@ start:
         printf("Please input a valid month\n>> ");
         scanf("%i", &month);
     }
+    
     // Check that the day is positive
     while (day < 1 || day > 12) {
         // If the year is not valid, tell user and ask for the year again
@@ -57,9 +57,12 @@ start:
         scanf("%i", &day);
     }
     
-    // Check that the day is <= the number of days in the month
-    
+    // Check if it's a leap year
     years_since = year - 1;
+    if (years_since % 4 == 0 && (years_since % 100 != 0 || years_since % 400 == 0)) {
+        days_in_month[1] = 29;
+    }
+    
     leap_years = years_since/4;
     century_years = years_since/100;
     four_century_years = years_since/400;
@@ -67,6 +70,13 @@ start:
     total_leap_years = leap_years - century_years + four_century_years;
     total_precesion = years_since + total_leap_years;
     day_index = total_precesion % 7;
+    
+    // Check that the day is valid according the number of days in the month
+    while (day < 1 || day > days_in_month[month]) {
+        // If the year is not valid, tell user and ask for the year again
+        printf("Please input a valid day\n>> ");
+        scanf("%i", &day);
+    }
     
     if (year < 2016) {
         past_future[0] = "Started";
