@@ -1,8 +1,28 @@
 // Calendars
+// AnyDayCalc
 // efournier
 // Programming In C
 
 #include <stdio.h>
+
+// check if year is positive
+
+// check if month is between 1 and 12
+
+// check that the day is positive
+
+// check that the day is <= than the number of days in the month
+
+// remember leap years when you check February
+
+// calculate precession to January 1 of the input year
+
+// count number of days into the year
+
+// count the length of the months before the input month and the number of days into the input month
+
+// January only 30 days because of reference date (01-01-0001)
+
 
 // Write a program to calculate the day of the week of the first day of any year
 // Assume that the current calendar rules were constant since 1/1/1
