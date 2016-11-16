@@ -16,6 +16,7 @@ int main(int argc, const char * argv[]) {
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
     // January only 30 days because of reference date (01-01-0001)
     int days_in_month[12] = {30,28,31,30,31,30,31,31,30,31,30,31};
+    int i, precession_this_year;
     
 start:
     // Ask for a date (i.e. 07/04/2414)
@@ -65,6 +66,14 @@ start:
     }
     
     // Count number of days into the year
+    i = 0;
+    precession_this_year = 0;
+    while (i < month) {
+        precession_this_year += days_in_month[i];
+        i++;
+    }
+    
+    precession_this_year += day;
     
     // Count the length of the months before the input month and the number of days into the input month
 
