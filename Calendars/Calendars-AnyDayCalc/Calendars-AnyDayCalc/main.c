@@ -69,7 +69,7 @@ start:
     total_precesion += precession_this_year;
     day_index = total_precesion % 7;
     
-    printf("%i/%i/%i Was A %s", month, day, year, days[day_index]);
+    printf("%i/%i/%i Was A %s\n", month, day, year, days[day_index]);
     
     printf("Want to go again? (Y/N)\n>> ");
     scanf("%s", &go_again);
