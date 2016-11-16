@@ -60,7 +60,7 @@ start:
     // Count how many days into the year input date is
     i = 0;
     precession_this_year = 0;
-    while (i < month) {
+    while (month > (i + 1)) {
         precession_this_year += days_in_month[i];
         i++;
     }
