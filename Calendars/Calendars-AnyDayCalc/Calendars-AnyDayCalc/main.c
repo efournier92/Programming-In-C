@@ -9,7 +9,7 @@
 
 
 
-// Check that the day is <= than the number of days in the month
+
 
 // Remember leap years when you check February
 
@@ -50,8 +50,14 @@ start:
         printf("Please input a valid month\n>> ");
         scanf("%i", &month);
     }
-    
     // Check that the day is positive
+    while (day < 1 || day > 12) {
+        // If the year is not valid, tell user and ask for the year again
+        printf("Please input a valid day\n>> ");
+        scanf("%i", &day);
+    }
+    
+    // Check that the day is <= the number of days in the month
     
     years_since = year - 1;
     leap_years = years_since/4;
