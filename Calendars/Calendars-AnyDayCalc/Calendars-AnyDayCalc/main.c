@@ -50,7 +50,7 @@ start:
     }
     
     // Check that the day is valid according the number of days in the month
-    while (day < 1 || day > days_in_month[month]) {
+    while (day < 1 || day > days_in_month[month - 1]) {
         // If the year is not valid, tell user and ask for the year again
         printf("Please input a valid day\n>> ");
         scanf("%i", &day);
