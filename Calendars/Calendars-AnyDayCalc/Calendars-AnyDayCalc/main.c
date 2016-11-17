@@ -14,13 +14,12 @@ int main(int argc, const char * argv[]) {
     const char *days[7];
     days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
-    // January only 30 days because of reference date (01-01-0001)
-    int days_in_month[12] = {30,28,31,30,31,30,31,31,30,31,30,31};
+    int days_in_month[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
     int i, precession_this_year;
     
 start:
     // Ask for a date (i.e. 07/04/2414)
-    printf("Please input a data (mm/dd/yyyy)\n>> ");
+    printf("Please input a date (mm/dd/yyyy)\n>> ");
     scanf("%i/%i/%i", &month, &day, &year);
     
     // Check if year is a positive integer year
@@ -65,8 +64,12 @@ start:
         i++;
     }
     
-    precession_this_year += day;
+    precession_this_year += (day);
     total_precesion += precession_this_year;
+    if (month != 1){
+        // January only has 30 days because of reference date (01-01-0001)
+        total_precesion -= 1;
+    }
     day_index = total_precesion % 7;
     
     printf("%i/%i/%i Was A %s\n", month, day, year, days[day_index]);
