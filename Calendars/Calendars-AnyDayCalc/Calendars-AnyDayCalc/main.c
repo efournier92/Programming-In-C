@@ -45,8 +45,8 @@ start:
     total_precesion = years_since + total_leap_years;
     
     // Check if this year's a leap year
-    if (years_since % 4 == 0 && (years_since % 100 != 0 || years_since % 400 == 0)) {
-        days_in_month[1] = 29;
+    if (year % 4 == 0 && !(year % 100 == 0 && year % 400 != 0)) {
+            days_in_month[1] = 29;
     }
     
     // Check that the day is valid according the number of days in the month
