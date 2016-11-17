@@ -11,7 +11,7 @@ int main(int argc, const char * argv[]) {
     int century_years, four_century_years;
     int total_leap_years, total_precesion, day_index;
     char go_again;
-    const char *days[7];
+    const char *days[7], *past_future[1];
     days[0] = "Monday", days[1] = "Tuesday", days[2] = "Wednesday";
     days[3] = "Thursday", days[4] = "Friday", days[5] = "Saturday", days[6] = "Sunday";
     int days_in_month[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
@@ -74,7 +74,13 @@ start:
     total_precesion += precession_this_year;
     day_index = total_precesion % 7;
     
-    printf("%i/%i/%i Was A %s\n", month, day, year, days[day_index]);
+    if (year < 2016) {
+        past_future[0] = "Was";
+    } else {
+        past_future[0] = "Will Be";
+    }
+    
+    printf("%i/%i/%i %s A %s\n", month, day, year, past_future[0], days[day_index]);
     
     printf("Want to go again? (Y/N)\n>> ");
     scanf("%s", &go_again);
