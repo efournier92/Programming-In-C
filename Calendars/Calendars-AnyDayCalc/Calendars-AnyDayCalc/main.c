@@ -64,12 +64,14 @@ start:
         i++;
     }
     
-    precession_this_year += (day);
-    total_precesion += precession_this_year;
-    if (month != 1){
+    if (month != 1) {
         // January only has 30 days because of reference date (01-01-0001)
         total_precesion -= 1;
+        precession_this_year += day;
+    } else {
+        precession_this_year = day - 1;
     }
+    total_precesion += precession_this_year;
     day_index = total_precesion % 7;
     
     printf("%i/%i/%i Was A %s\n", month, day, year, days[day_index]);
