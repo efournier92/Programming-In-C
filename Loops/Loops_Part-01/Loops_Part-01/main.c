@@ -7,7 +7,7 @@
 int main(int argc, const char * argv[]) {
     int i;
     const char *sep[1];
-    sep[0] = "**********";
+    sep[0] = "**********\n";
     
 // Count by 2’s from -33 to 10
     printf("%s", sep[0]);
@@ -16,8 +16,8 @@ int main(int argc, const char * argv[]) {
     }
     
 // Count by 5’s from 243 to 288
-    
-    for (i = -33; i >= -33 && i <= 10; i += 2) {
+    printf("%s", sep[0]);
+    for (i = 243; i >= 243 && i <= 288; i += 5) {
         printf("%i\n", i);
     }
     
