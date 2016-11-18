@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
     // Print values of X from -4.0 to 4.0 at each increment of 0.1
     for (x = -4.0; x <= 4.0; x += 0.1) {
         y = pow(x, 3) - (4 * pow(x, 2)) + (2 * x) + 8;
-        printf("%.1f   %.1f\n", x, y);
+        printf("%4.1f   %4.1f\n", x, y);
     }
     printf("%s", sep[0]);
     
