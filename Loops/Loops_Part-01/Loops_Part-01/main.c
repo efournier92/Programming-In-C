@@ -8,8 +8,8 @@ int main(int argc, const char * argv[]) {
     int i;
     
 // Count by 2’s from -33 to 10
-    for (i = -33; i > -33 && i <= 10) {
-    
+    for (i = -33; i >= -33 && i <= 10; i += 2) {
+        printf("%i", i);
     }
     
     
