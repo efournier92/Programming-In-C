@@ -11,13 +11,13 @@ int main(int argc, const char * argv[]) {
     
 // Count by 2’s from -33 to 10
     printf("%s", sep[0]);
-    for (i = -33; i >= -33 && i <= 10; i += 2) {
+    for (i = -33; i <= 10; i += 2) {
         printf("%i\n", i);
     }
     
 // Count by 5’s from 243 to 288
     printf("%s", sep[0]);
-    for (i = 243; i >= 243 && i <= 288; i += 5) {
+    for (i = 243; i <= 288; i += 5) {
         printf("%i\n", i);
     }
     
