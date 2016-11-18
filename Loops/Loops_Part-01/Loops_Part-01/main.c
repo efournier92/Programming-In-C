@@ -9,7 +9,7 @@ int main(int argc, const char * argv[]) {
     int i;
     float x, y;
     const char *sep[1];
-    sep[0] = "**********\n";
+    sep[0] = "*************\n";
     
 // Count by 2’s from -33 to 10
     printf("%s", sep[0]);
@@ -31,13 +31,12 @@ int main(int argc, const char * argv[]) {
 
 // Evaluate the function: y = x^3 - 4x^2 + 2x + 8
     printf("%s", sep[0]);
-    printf(" X    Y");
+    printf("  X      Y\n");
     
     // Print values of X from -4.0 to 4.0 at each increment of 0.1
-    for (x = -4.0; x >= 4.0; x += 0.1) {
+    for (x = -4.0; x <= 4.0; x += 0.1) {
         y = pow(x, 3) - (4 * pow(x, 2)) + (2 * x) + 8;
-        printf(" X    Y");
-        printf("%.1f   %.1f", x, y);
+        printf("%.1f   %.1f\n", x, y);
     }
     printf("%s", sep[0]);
     
