@@ -12,10 +12,9 @@ int main(int argc, const char * argv[]) {
     
 // Count by -7’s from 133 to zero
   
-//    Evaluate the function: y = x^3 - 4x^2 + 2x + 8
+// Evaluate the function: y = x^3 - 4x^2 + 2x + 8
 
-//        Print this out in lines, each of which contains both the X value and the function value at the X value.
-
+// Print values of X from -4.0 to 4.0 at each increment of 0.1.
     
     return 0;
 }
