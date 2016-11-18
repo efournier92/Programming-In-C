@@ -6,14 +6,20 @@
 
 int main(int argc, const char * argv[]) {
     int i;
+    const char *sep[1];
+    sep[0] = "**********";
     
 // Count by 2’s from -33 to 10
+    printf("%s", sep[0]);
     for (i = -33; i >= -33 && i <= 10; i += 2) {
         printf("%i\n", i);
     }
     
-    
 // Count by 5’s from 243 to 288
+    
+    for (i = -33; i >= -33 && i <= 10; i += 2) {
+        printf("%i\n", i);
+    }
     
 // Count by -7’s from 133 to zero
   
