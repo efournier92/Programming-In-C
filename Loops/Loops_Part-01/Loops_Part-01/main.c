@@ -22,7 +22,11 @@ int main(int argc, const char * argv[]) {
     }
     
 // Count by -7’s from 133 to zero
-  
+    printf("%s", sep[0]);
+    for (i = 133; i >= 0; i += -7) {
+        printf("%i\n", i);
+    }
+
 // Evaluate the function: y = x^3 - 4x^2 + 2x + 8
 
 // Print values of X from -4.0 to 4.0 at each increment of 0.1.
