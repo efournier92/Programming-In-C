@@ -42,14 +42,15 @@ int main(int argc, const char * argv[]) {
 
 // Calculate the first n Fibonacci numbers
     int num1, num2, fibnum;
-    
     num1 = 1;
     num2 = 1;
-    
+    printf("%i", num1);
+    printf("%i", num2);
     for (i = 1; 1 <= x; i++) {
         fibnum = num1 + num2;
-        num2 = num1
+        num2 = num1;
         num1 = fibnum;
+        printf("%i", fibnum);
     }
     
     
