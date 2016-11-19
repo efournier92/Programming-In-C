@@ -56,18 +56,18 @@ int main(int argc, const char * argv[]) {
     }
     
 // Calculate the nth Fibonacci number
+    fibnum = 1;
     num1 = 1;
     num2 = 1;
     printf("Which nth Fibonacci Number\n>> ");
     scanf("%i", &k);
-    
-    printf("%i\n", num1);
-    printf("%i\n", num2);
+
     for (i = 1; i <= (k - 2); i++) {
         fibnum = num1 + num2;
         num2 = num1;
         num1 = fibnum;
     }
+    printf("The %ith FibNum is %i\n", k, fibnum);
     
     
     return 0;
