@@ -41,7 +41,19 @@ int main(int argc, const char * argv[]) {
     printf("%s", sep[0]);
 
 // Calculate the first n Fibonacci numbers
-
+    int num1, num2, fibnum;
+    
+    num1 = 1;
+    num2 = 1;
+    
+    for (i = 1; 1 <= x; i++) {
+        fibnum = num1 + num2;
+        num2 = num1
+        num1 = fibnum;
+    }
+    
+    
+    
 // Calculate the nth Fibonacci number
     
     return 0;
