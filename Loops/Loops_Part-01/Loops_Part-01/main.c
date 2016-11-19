@@ -54,6 +54,7 @@ int main(int argc, const char * argv[]) {
         num1 = fibnum;
         printf("%i\n", fibnum);
     }
+    printf("%s", sep[0]);
     
 // Calculate the nth Fibonacci number
     fibnum = 1;
@@ -68,7 +69,7 @@ int main(int argc, const char * argv[]) {
         num1 = fibnum;
     }
     printf("The %ith FibNum is %i\n", k, fibnum);
-    
+    printf("%s", sep[0]);
     
     return 0;
 }
