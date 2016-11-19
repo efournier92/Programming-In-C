@@ -6,7 +6,7 @@
 #include <math.h>
 
 int main(int argc, const char * argv[]) {
-    int i;
+    int i, num1, num2, fibnum, k;
     float x, y;
     const char *sep[1];
     sep[0] = "*************\n";
@@ -41,7 +41,6 @@ int main(int argc, const char * argv[]) {
     printf("%s", sep[0]);
 
 // Calculate the first n Fibonacci numbers
-    int num1, num2, fibnum, k;
     num1 = 1;
     num2 = 1;
     printf("How Many Fibonacci Numbers?\n>> ");
@@ -57,6 +56,19 @@ int main(int argc, const char * argv[]) {
     }
     
 // Calculate the nth Fibonacci number
+    num1 = 1;
+    num2 = 1;
+    printf("Which nth Fibonacci Number\n>> ");
+    scanf("%i", &k);
+    
+    printf("%i\n", num1);
+    printf("%i\n", num2);
+    for (i = 1; i <= (k - 2); i++) {
+        fibnum = num1 + num2;
+        num2 = num1;
+        num1 = fibnum;
+    }
+    
     
     return 0;
 }
