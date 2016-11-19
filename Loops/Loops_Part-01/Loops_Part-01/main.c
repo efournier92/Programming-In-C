@@ -39,6 +39,10 @@ int main(int argc, const char * argv[]) {
         printf("%4.1f   %4.1f\n", x, y);
     }
     printf("%s", sep[0]);
+
+// Calculate the first n Fibonacci numbers
+
+// Calculate the nth Fibonacci number
     
     return 0;
 }
