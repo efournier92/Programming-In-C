@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B82D95901DDE7EE90050E84B"
+               BlueprintIdentifier = "B824EEB81DF7BDC800352422"
                BuildableName = "Loops_Part-01"
                BlueprintName = "Loops_Part-01"
                ReferencedContainer = "container:Loops_Part-01.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B82D95901DDE7EE90050E84B"
+            BlueprintIdentifier = "B824EEB81DF7BDC800352422"
             BuildableName = "Loops_Part-01"
             BlueprintName = "Loops_Part-01"
             ReferencedContainer = "container:Loops_Part-01.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B82D95901DDE7EE90050E84B"
+            BlueprintIdentifier = "B824EEB81DF7BDC800352422"
             BuildableName = "Loops_Part-01"
             BlueprintName = "Loops_Part-01"
             ReferencedContainer = "container:Loops_Part-01.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B82D95901DDE7EE90050E84B"
+            BlueprintIdentifier = "B824EEB81DF7BDC800352422"
             BuildableName = "Loops_Part-01"
             BlueprintName = "Loops_Part-01"
             ReferencedContainer = "container:Loops_Part-01.xcodeproj">
