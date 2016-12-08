@@ -7,7 +7,7 @@
 
 int main(int argc, const char * argv[]) {
     //  Count in user-specified base
-    int z, y, x, w, v;
+    int digit00, digit01, digit02, digit03, digit04;
     int base, num;
     
     //Ask the user for the base
