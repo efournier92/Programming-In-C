@@ -6,18 +6,26 @@
 
 
 int main(int argc, const char * argv[]) {
-    int base;
-    //Count in user-specified base
+    //  Count in user-specified base
+    int z, y, x, w, v;
+    int base, num;
     
     //Ask the user for the base
     printf("What base to use? (2-10)\n>> ");
     scanf("%i", &base);
     
     //Bases 2-10 are acceptable
-    if (base < 2 || base > 10) {
+    while (base < 2 || base > 10) {
         printf("Please input a base from 2-10\n>> ");
+        scanf("%i", &base);
     }
+    
     //Count from 0 to the maximum number which can be written in 4 digits.
+    while (num < 10000) {
+        while (num % base != 0) {
+            
+    }
+    }
     //Strategy:
     //Use one variable to represent each digit
     //Always increment the least significant digit
